@@ -90,7 +90,7 @@ WHERE
 -- 6. List the order id, order date, ship name, ship address of all orders that 
 -- ordered "Sasquatch Ale"?  
     SELECT 
-		O.OrderID, O.OrderDate, O.ShipName, O.ShipAddress
+		O.OrderID, O.OrderDate, O.ShipName, O.ShipAddress, p.ProductName
 	FROM 
 		orders O
     JOIN `order details` OD ON O.OrderID = od.OrderID
